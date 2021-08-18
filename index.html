@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	
+	<title>Графік годин</title>
+</head>
+<body>
+	<div class="block">
+		<header>
+			<div class="container">
+				<div class="header-text">Редагування робочого часу</div>
+			</div>
+		</header>
+		<main>
+			<button class="forms_button bt">Додати ще+</button>
+			<div class="main_block" id="board">
+			</div>
+			<div class="bt2">
+				<button class="sure" onclick="info()">Зберегти</button>
+			</div>
+		</main>
+	</div>
+	<div class="block_forms pers">
+		<button class="forms_button ">Видалити</button>
+		<div class="forms_time inputOne" >
+			<img src="https://image.flaticon.com/icons/png/512/61/61227.png"  alt="упс">
+			<input class="time_1" type="text" name="time" placeholder="час від" value="" required>
+		</div>
+		<div>_</div>
+		<div class="forms_time inputTwo">
+			<img src="https://image.flaticon.com/icons/png/512/61/61227.png" alt="упс">
+			<input class="time_2" type="text" name="time" placeholder="час до" value=""  required>
+		</div>
+		<div class="checkbox">
+			<label class="container">
+				<span>пн</span>
+				<input type="checkbox" >
+				<span class="checkmark" id="checkmark"></span>
+			 </label>
+			 <label class="container">
+				<span>вт</span>
+				<input type="checkbox">
+				<span class="checkmark" id="checkmark"></span>
+			 </label>
+			 <label class="container">
+				<span>ср</span>
+				<input type="checkbox">
+				<span class="checkmark" id="checkmark"></span>
+			 </label>
+			 <label class="container">
+				<span>чт</span>
+				<input type="checkbox">
+				<span class="checkmark" id="checkmark"></span>
+			 </label>
+			 <label class="container">
+				<span>пт</span>
+				<input type="checkbox">
+				<span class="checkmark" id="checkmark"></span>
+			 </label>
+			 <label class="container">
+				<span>сб</span>
+				<input type="checkbox">
+				<span class="checkmark" id="checkmark"></span>
+			 </label>
+			 <label class="container">
+				<span>нд</span>
+				<input type="checkbox">
+				<span class="checkmark" id="checkmark"></span>
+			 </label>
+ <span class="spantest"><span>пн</span><span>вт</span><span>ср</span><span>чт</span><span>пт</span><span>сб</span><span>нд</span></span>
+		</div>
+	</div>
+	<script src="/js/add.js"></script>
+</body>
+</html>
