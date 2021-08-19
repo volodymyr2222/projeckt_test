@@ -233,6 +233,7 @@ main .main_block .block_forms .forms_time {
           align-items: center;
   width: 200px;
   border-bottom: 3px solid black;
+  position: relative;
 }
 
 main .main_block .block_forms .forms_time img {
@@ -267,7 +268,11 @@ main .main_block .block_forms .checkbox .container .checkmark4 {
   background-color: #08ff1d;
 }
 
-main .bt2 button {
+main .bt2 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   position: absolute;
   left: 50%;
   bottom: 10px;
@@ -275,11 +280,6 @@ main .bt2 button {
           transform: translate(-50%, 0);
 }
 
-main .bt2 button img {
-  width: 70px;
-  background-color: white;
-  border-radius: 50%;
-}
 
 
 main .bt2 button:active {
@@ -342,10 +342,8 @@ main .bt2 button:active {
   border-radius: 7px;
   border: 2px solid black;
   z-index: 50;
-  -webkit-transition: 0.3s ease-in;
-  transition: 0.3s ease-in;
-  overflow: hidden;
 }
+
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
@@ -414,4 +412,67 @@ body .block_forms {
   font-weight: 600;
   -webkit-box-shadow: 0px 4px 1px rgba(0,0,0,0.5);
   box-shadow: 0px 4px 1px rgba(0,0,0,0.5);
+}
+.eror {
+  width: 150px;
+  height: 40px;
+  border: 1px solid red;
+  border-bottom-left-radius: 20px ;
+  border-top-right-radius: 20px ;
+  border-bottom-left-radius: 20px ;
+  border-top-left-radius: 20px ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: rgb(230, 67, 67);;
+  position: absolute;
+  bottom: 80px;
+  right: 70px;
+  font-weight: 600;
+  opacity: 0;
+}
+
+
+.allCheckmark1 {
+  background-color: rgb(153, 31, 31);
+}
+
+.eroor_input {
+  position:absolute;
+  top: 30px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(224, 66, 66) ;
+  height: 30px;
+  width: 125px;
+  border-bottom-left-radius: 20px ;
+  border-top-right-radius: 20px ;
+  border-bottom-left-radius: 20px ;
+  border-bottom-right-radius: 20px;
+  background-color: rgb(230, 67, 67);
+  font-weight: 600;
+  opacity: 0;
+}
+
+.ErrorCheckbox{
+position: absolute;
+top: 35px;
+left: 200px;
+border: 1px solid rgb(238, 58, 58); 
+width: 130px;
+height: 25px;
+background-color: rgb(230, 67, 67);
+font-weight: 600;
+font-size: 17px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-bottom-left-radius: 20px ;
+border-top-right-radius: 20px ;
+border-bottom-left-radius: 20px ;
+border-bottom-right-radius: 20px;
+opacity: 0;
 }
