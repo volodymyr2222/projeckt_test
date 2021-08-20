@@ -255,39 +255,38 @@ function info() {
  infoArr = [];
   const info = document.querySelectorAll('.main_block .block_forms')
   for (let key of info) {
-      var input_1 = key.children[1].children[1].value
-      var input_2 = key.children[3].children[1].value
+      var input_1 = key.children[1].children[1]
+      var input_2 = key.children[3].children[1]
       const checkbox = key.children[4].children
       var checkboxArr = []
-// console.log(key);
+
       for (let key of checkbox) {
-         console.log(key);
+        let block_label = key.children[0]
         if(key.children[1].checked){
-          let a = key.children[0].textContent
-          checkboxArr.push(a)
-         
+          checkboxArr.push(block_label.textContent)
         }
       }
       const infoObj = {
         hour: {
-            time1: input_1,
-            time2: input_2,
+            time1: input_1.value,
+            time2: input_2.value,
         },
     days: checkboxArr
   }
   infoArr.push(infoObj);  
 }
-
-if (input_1 !== '' && input_2 !== '' && checkboxArr.length) {
-  // console.log(infoArr);
-} else if (checkboxArr.length === 0) {
-  for(let key of info) {
-key.children[3].children[3].style.opacity = 1
-  }
-  
+if (input_1.value !== '' && input_2 !== '' && checkboxArr.length) {
+  console.log(infoArr);
 }
-
-
+if(checkboxArr.length === 0) {
+    erororChe()
+}
+if(input_1.value === ''){
+  input_1.parentElement.children[2].style.opacity = 1
+}
+if(input_2.value === ''){
+  input_2.parentElement.children[2].style.opacity = 1
+}
 }
 
 // видалення
